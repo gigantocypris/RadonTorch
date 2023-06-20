@@ -1,6 +1,6 @@
-### Author: Hojune Kim
+### Author: Hojune Kim, Gary Chen
 ### Date: June 15, 2023
-### Last Updated: Jun 15, 2023
+### Last Updated: Jun 20, 2023
 ### Description: Radon Transform (obj to sinogram)
 
 import torch
