@@ -1,3 +1,8 @@
+### Author: Hojune Kim
+### Date: June 15, 2023
+### Last Updated: Jun 15, 2023
+### Description: Radon Transform (obj to sinogram)
+
 import torch
 import torch.nn as nn
 from torchvision.transforms.functional import rotate, InterpolationMode
