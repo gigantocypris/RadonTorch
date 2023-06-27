@@ -40,7 +40,7 @@ class ImgToSinogram(nn.Module):
         n, k, y, x = image_batch.shape
 
         # Initialize a tensor to store the sinograms
-        padding = 28
+        padding = 0 # 28
         padding_tensor = torch.zeros(padding)
         sinograms = torch.zeros((n, k, x + 2 * padding), device=image_batch.device)
 

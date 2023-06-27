@@ -14,8 +14,8 @@ from sinogram_class import ImageRotator, ImgToSinogram
 def main():
     ###############################################################
     # Specify the file paths
-    sinogram_path = os.path.join(os.pardir, 'dataset_foam', 'x_train_sinograms.npy')
-    obj_path = os.path.join(os.pardir,  'dataset_foam' ,'foam_training.npy')
+    sinogram_path = os.path.join('dataset_foam', 'x_train_sinograms.npy')
+    obj_path = os.path.join('dataset_foam' ,'foam_training.npy')
 
     # Load the .npy files
     sinogram_data = np.load(sinogram_path)
@@ -47,7 +47,7 @@ def main():
         os.makedirs(data_folder)
 
     # Save sinogram_batch as .npy file
-    sinogram_file = os.path.join(data_folder, 'sinogram_batch.npy')
+    sinogram_file = os.path.join(data_folder, 'sinogram_batch_no_padding.npy')
     np.save(sinogram_file, sinogram_batch)
     
     ###############################################################
